@@ -1,5 +1,5 @@
 # wisp-client-crystal
-tldr: A janky wisp-client-js port to crystal-lang
+tldr: A janky wisp-client-js port to crystal-lang, expect bugs.
 
 Stability untested, only basic testing was done to see if it "works"
 No UDP support, some other things might be broken, not really sure.
