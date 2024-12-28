@@ -1,5 +1,5 @@
 # wisp-crystal
-tldr: A wisp-js port to crystal-lang
+tldr: A janky wisp-js port to crystal-lang
 
 Stability untested, only basic testing was done to see if it "works"
 No UDP support, some other things might be broken, not really sure.
