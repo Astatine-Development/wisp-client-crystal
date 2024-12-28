@@ -148,7 +148,6 @@ class Stream
     @open = false
     @connection.active_streams.delete(@stream_id)
     emit("close", Event.new("close"))
-    reconnect
   end
 
   def on_message(&block : Bytes -> Nil)
@@ -384,7 +383,6 @@ class Connection
     emit("close", Event.new("close"))
     stream.@close_callback.try &.call(reason)
     @active_streams.delete(stream.stream_id)
-    stream.reconnect
   end
 end
 
